@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'next/link'
+import Href from '@/utils/theme/linkHref/Href'
 import ScreenWidth from '@/utils/theme/screenWidth/ScreenWidth'
 import Logo1 from '@/utils/theme/logo/Logo1'
 import { languagesApi } from '@/utils/languagesApi'
@@ -25,9 +25,9 @@ const Footer = () => {
     )
     const footerEndLinks = (items) => (
         items.map((item, i) => (
-            <Link href={item.link} key={i} className={`p-0 m-0 text-sm text-gray-600 hover:text-primaryBold hover:underline hover:font-bold w-1/2 md:w-auto`}>
+            <Href to={item.link} key={i} className={`p-0 m-0 text-sm text-gray-600 hover:text-primaryBold hover:underline hover:font-bold w-1/2 md:w-auto`}>
                 {item.name}
-            </Link>
+            </Href>
         ))
     )
     const selectLanguage = () => (

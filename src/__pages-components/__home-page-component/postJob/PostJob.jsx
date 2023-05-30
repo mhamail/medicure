@@ -1,7 +1,8 @@
 import React from 'react'
-import Link from 'next/link'
+// utils
 import ScreenWidth from '@/utils/theme/screenWidth/ScreenWidth'
-import { ButtonUnfilled } from '@/utils/theme/buttons/Buttons'
+import { ButtonUnfilled } from '@/components/buttons/Buttons'
+import Href from '@/utils/theme/linkHref/Href'
 
 const PostJob = () => {
     return (
@@ -13,9 +14,9 @@ const PostJob = () => {
                             Post your job for millions of people to see
                         </h1>
                     </div>
-                    <Link href="#" className='mt-4 md:mt-0'>
+                    <Href to="#" className='mt-4 md:mt-0'>
                         <ButtonUnfilled text="Post a job" />
-                    </Link>
+                    </Href>
                 </div>
             </ScreenWidth>
         </div>

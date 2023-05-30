@@ -1,12 +1,12 @@
 
 import React from 'react'
-import Link from 'next/link';
 
 //component
 import MenuItems from '../menu/_MenuItems';
 //utils
 import ScreenWidth from '@/utils/theme/screenWidth/ScreenWidth';
-import { ButtonUnfilled } from '@/utils/theme/buttons/Buttons';
+import { ButtonUnfilled } from '../buttons/Buttons';
+import Href from '@/utils/theme/linkHref/Href';
 // theme
 import Logo1 from '@/utils/theme/logo/Logo1';
 const Header = () => {
@@ -14,9 +14,9 @@ const Header = () => {
         <div id="hero">
             <ScreenWidth>
                 <nav className='flex justify-between items-center h-20'>
-                    <Link href="/">
+                    <Href to="/">
                         <Logo1 />
-                    </Link>
+                    </Href>
                     <div className='flex items-center relative h-20'>
                         <div className='hidden md:flex items-center space-x-5'>
                             <MenuItems />
@@ -25,12 +25,12 @@ const Header = () => {
                             <div className='w-[1px] h-10 bg-gray-400'></div>
                         </div>
                         <div className='space-x-2 flex items-center '>
-                            <Link href="/" className='font-bold px-4 py-2 cursor-pointer hover:rounded-full hover:bg-hovering'>
+                            <Href to="/" className='font-bold px-4 py-2 hover:rounded-full hover:bg-hovering'>
                                 Join now
-                            </Link>
-                            <Link href="/">
-                                <ButtonUnfilled text="Sign in"/>
-                            </Link>
+                            </Href>
+                            <Href to="/sigin">
+                                <ButtonUnfilled text="Sign in" />
+                            </Href>
                         </div>
                     </div>
 

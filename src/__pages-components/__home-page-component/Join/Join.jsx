@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 
 //utils
 import ScreenWidth from '@/utils/theme/screenWidth/ScreenWidth'
-import { Buttonfilled } from '@/utils/theme/buttons/Buttons'
+import { Buttonfilled } from '@/components/buttons/Buttons'
 
 const Background = styled.div`
     background-image: url(/bg.png);

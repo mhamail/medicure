@@ -1,6 +1,6 @@
 import React from 'react'
 //utils
-import { Buttonfilled } from '@/utils/theme/buttons/Buttons'
+import { Buttonfilled } from '../buttons/Buttons'
 
 const HomeSignin = () => {
     return (

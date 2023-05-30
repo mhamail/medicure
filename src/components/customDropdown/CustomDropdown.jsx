@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import Link from 'next/link';
+import Href from '@/utils/theme/linkHref/Href';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const CustomDropdown = () => {
@@ -56,7 +56,7 @@ const CustomDropdown = () => {
             {open &&
                 <ul className='bg-white shadow-lg border'>
                     {list?.map((item) => (
-                        <Link href={item.link} key={item.title}>
+                        <Href to={item.link} key={item.title}>
                             <li className='p-2 text-sm cursor-pointer hover:underline'>
                                 <h4 className='font-bold'>
                                     {item.title}
@@ -65,7 +65,7 @@ const CustomDropdown = () => {
                                     {item.sub}
                                 </span>
                             </li>
-                        </Link>
+                        </Href>
                     ))}
                 </ul>
             }

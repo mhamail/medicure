@@ -1,7 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
-import { TagButton } from '@/utils/theme/buttons/Buttons'
+//utils
+import Href from '@/utils/theme/linkHref/Href'
+import { TagButton } from '../buttons/Buttons'
 
 const ConnectCard = ({ image,title, btnText, link }) => {
     return (
@@ -15,9 +16,9 @@ const ConnectCard = ({ image,title, btnText, link }) => {
             <h1 className='md:text-4xl text-3xl font-extralight'>
                 {title}
             </h1>
-            <Link href={"#" || link}>
+            <Href to={"#" || link}>
                 <TagButton text={btnText} />
-            </Link>
+            </Href>
         </div>
     )
 }

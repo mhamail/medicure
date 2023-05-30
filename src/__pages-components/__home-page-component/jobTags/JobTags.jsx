@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import Link from 'next/link'
 //utils
 import ScreenWidth from '@/utils/theme/screenWidth/ScreenWidth'
-import { TagButton } from '@/utils/theme/buttons/Buttons'
+import { TagButton } from '@/components/buttons/Buttons'
+import Href from '@/utils/theme/linkHref/Href'
 //
 import { tagList } from './taglist'
 // components
@@ -25,9 +25,9 @@ const JobTags = () => {
                         </h4>
                         <div className='flex flex-wrap gap-2'>
                             {tagList.slice(0, toggle ? tagList.length : 10).map((tag, i) => (
-                                <Link href={tag.link} key={i}>
+                                <Href to={tag.link} key={i}>
                                     <TagButton text={tag.name} full />
-                                </Link>
+                                </Href>
                             ))}
                         </div>
                         <ShowMore setToggle={setToggle} toggle={toggle} />
