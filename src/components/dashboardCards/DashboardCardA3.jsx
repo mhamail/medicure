@@ -5,9 +5,9 @@ import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 //component
 import BgIcon from '@/components/bgIcon/BgIcon';
 
-const DashboardCard3 = ({ active, resolved, pending }) => {
+const DashboardCard3 = ({ className }) => {
   return (
-    <div className='bg-[#FCF3E1] p-6 space-y-6 rounded-lg col-span-4'>
+    <div className={`bg-[#FCF3E1] p-6 space-y-6 rounded-lg ${className}`}>
       <div className='flex justify-between items-center'>
         <BgIcon className={"bg-[#82B39A]"}
           icon={<Replace className='text-white fill-neutral-100' />}

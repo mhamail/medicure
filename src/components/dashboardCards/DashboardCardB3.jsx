@@ -2,10 +2,10 @@ import React from 'react'
 import { MoreVertical } from 'lucide-react'
 
 
-const DashboardCardB3 = () => {
+const DashboardCardB3 = ({className}) => {
 
     return (
-        <div className='col-span-4 flex flex-col -space-y-6 justify-between'>
+        <div className={`shadow-sm p-3 flex flex-col justify-between space-y-6 ${className}`}>
             <div className='flex justify-between'>
                     <h2 className='font-bold'>
                        Quick Stats

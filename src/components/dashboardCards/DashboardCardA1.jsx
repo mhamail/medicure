@@ -4,9 +4,9 @@ import { MoreHorizontal } from 'lucide-react';
 //component
 import BgIcon from '@/components/bgIcon/BgIcon';
 
-const DashboardCard1 = ({ active, resolved, pending }) => {
+const DashboardCard1 = ({ active, resolved, pending,className }) => {
   return (
-    <div className='bg-[#82B39A] p-6 space-y-12 rounded-lg col-span-4'>
+    <div className={`bg-[#82B39A] p-6 space-y-12 rounded-lg ${className}`}>
       <div className='flex justify-between items-center'>
         <BgIcon
           icon={<div className='h-4 w-4 rounded-full bg-white'></div>}

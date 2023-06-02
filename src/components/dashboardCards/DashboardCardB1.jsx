@@ -3,12 +3,11 @@ import { MoreVertical, Paperclip, Plus } from 'lucide-react'
 // component
 import AvatarList from '../avatarList/AvatarList'
 import OfficeTime from '../officeTime/OfficeTime'
-import BgIcon from '../bgIcon/BgIcon'
 
-const DashboardCardB1 = () => {
+const DashboardCardB1 = ({className}) => {
 
     return (
-        <div className='col-span-4 space-y-6'>
+        <div className={`shadow-sm p-3 flex flex-col justify-between space-y-6 ${className}`}>
             <div className='flex justify-between'>
                 <h2 className='font-bold'>
                     Monday Standup

@@ -2,12 +2,12 @@ import React from 'react'
 import { MoreVertical } from 'lucide-react'
 
 
-const DashboardCardB2 = () => {
+const DashboardCardB2 = ({className}) => {
     const handleSelect = (e) => {
         console.log(e.target.value)
     }
     const selectCard1 = () => (
-        <div className='shadow-md rounded-md p-2 py-4  space-y-6'>
+        <div className="shadow-md rounded-md p-2 py-4 space-y-6 ">
             <div className='flex justify-between'>
                 <div className='w-1/2 md:w-auto'>
                     <select className=' text-md font-semibold border-none outline-none '
@@ -64,7 +64,7 @@ const DashboardCardB2 = () => {
         </div>
     )
     return (
-        <div className='col-span-4 flex flex-col justify-between'>
+        <div className={`shadow-sm p-3 flex flex-col justify-between space-y-6 ${className}`}>
             <div className='flex justify-between'>
                 <div className='flex space-x-4'>
                     <h2 className='font-bold'>

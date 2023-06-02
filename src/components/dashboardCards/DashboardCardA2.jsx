@@ -4,9 +4,9 @@ import { MoreHorizontal, Moon } from 'lucide-react';
 //component
 import BgIcon from '@/components/bgIcon/BgIcon';
 
-const DashboardCard2 = ({ active, resolved, pending }) => {
+const DashboardCard2 = ({className}) => {
   return (
-    <div className='bg-[#FCF2EF] p-6 space-y-12 rounded-lg col-span-4'>
+    <div className={`bg-[#FCF2EF] p-6 space-y-12 rounded-lg ${className}`}>
       <div className='flex justify-between items-center'>
         <BgIcon className={"bg-gray-900"}
           icon={<Moon className='text-white fill-neutral-100' />}

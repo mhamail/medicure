@@ -17,39 +17,52 @@ import DashboardCardB3 from '@/components/dashboardCards/DashboardCardB3';
 const Dashboard = () => {
   const dashboardHeader = () => (
     <div className=' border-b-2 pb-8'>
-      <div className='flex justify-between items-center px-16'>
-        <h1 className='font-semibold text-gray-800 text-2xl'>Good Evening Shakir</h1>
-        <Searchbar className={"w-72"} text="search here" />
+      <div className='flex justify-between items-center md:px-16 px-6'>
+        <h1 className='font-semibold text-gray-800 md:text-2xl text-xl'>
+          Good Evening Shakir
+        </h1>
+        <Searchbar className={"w-56"} text="search here" />
       </div>
     </div>
   )
   const dashboardCardA = () => (
-    <div className='px-16 py-8'>
-    <div className='grid grid-cols-12 gap-x-6 justify-between'>
-      <DashboardCard1 active={"29"} resolved={"144"} pending={"14"} />
-      <DashboardCard2 />
-      <DashboardCard3 />
+    <div className='md:px-16 px-8 py-8'>
+      <div className='grid grid-cols-12  gap-6 justify-between'>
+        <DashboardCard1 active={"29"} resolved={"144"} pending={"14"}
+          className={"md:col-span-4 col-span-12 "}
+        />
+        <DashboardCard2
+          className={"md:col-span-4 col-span-12"}
+        />
+        <DashboardCard3
+          className={"md:col-span-4 col-span-12"}
+        />
+      </div>
     </div>
-  </div>
   )
-  const dashboardCardB=()=>(
-    <div className='px-16 py-8'>
-    <div className='grid grid-cols-12 gap-x-6 justify-between'>
-     <DashboardCardB1/>
-     <DashboardCardB2/>
-     <DashboardCardB3/>
+  const dashboardCardB = () => (
+    <div className='md:px-16 px-8 py-8'>
+      <div className='grid grid-cols-12 gap-6 justify-between'>
+        <DashboardCardB1
+          className={"md:col-span-4 col-span-12"}
+        />
+        <DashboardCardB2
+          className={"md:col-span-4 col-span-12"}
+        />
+        <DashboardCardB3
+          className={"md:col-span-4 col-span-12"}
+        />
+      </div>
     </div>
-  </div>
   )
   return (
     <div>
       <SideBar>
         <div className='grid grid-cols-12  '>
-          <div className='col-span-9 py-4 min-h-screen border-r-2 '>
+          <div className='md:col-span-9 col-span-12 py-4 min-h-screen md:border-r-2 '>
             {dashboardHeader()}
             {dashboardCardA()}
             {dashboardCardB()}
-
           </div>
           <div className='col-span-3 px-16'>s</div>
         </div>

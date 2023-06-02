@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import Dashboard from '@/utils/theme/dashboard/Dashboard'
+import Dashboard from '@/_pages/_dashboard/DashBoard'
 
 const Page = () => {
     return (
