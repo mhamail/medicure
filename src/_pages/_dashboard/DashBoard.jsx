@@ -27,7 +27,7 @@ const Dashboard = () => {
                         <DashBoardCardB />
                     </div>
                     <div className='md:col-span-3 col-span-12 md:px-6 px-4 py-4 md:space-y-14 space-y-10'>
-                        <div className='hidden md:block pb-8'>
+                        <div className='hidden md:block pb-8 '>
                             <LeftHeader />
                         </div>
                         <GuageChartdiv />

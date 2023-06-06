@@ -4,7 +4,7 @@ import { CategoryScale, LinearScale, BarController, BarElement, Title } from 'ch
 ChartJS.register(ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarController, BarElement, Title);
 import { Bar } from 'react-chartjs-2';
 
-const BarChart = () => {
+const BarChart2 = () => {
     const data = {
         labels: ['Esther', 'Bessle', 'Kristin', 'Ralph', 'Leslie', 'Jeroma', 'Courtney'],
         datasets: [
@@ -13,19 +13,13 @@ const BarChart = () => {
                 data: [80, 20, 40, 60, 80, 40, 30],
                 backgroundColor: '#3F435B',
                 borderWidth: 1,
-                barBorderRadius: 100,
-                borderSkipped: false,
                 barPercentage: 0.5,
-                fill: false,
             },
             {
                 label: 'Sales',
                 data: [40, 20, 50, 30, 70, 40, 60],
                 backgroundColor: '#8AB8A0 ',
                 borderWidth: 1,
-                borderWidth: 1,
-                barBorderRadius: 100,
-                borderSkipped: false,
                 barPercentage: 0.5,
             },
             {
@@ -33,9 +27,6 @@ const BarChart = () => {
                 data: [20, 30, 80, 40, 20, 50, 20],
                 backgroundColor: '#F2CD91',
                 borderWidth: 1,
-                borderWidth: 1,
-                barBorderRadius: 100,
-                borderSkipped: false,
                 barPercentage: 0.5,
             },
 
@@ -43,9 +34,6 @@ const BarChart = () => {
     };
     const options = {
         maintainAspectRatio: false,
-        layout:{
-            padding:20
-        },
         plugins: {
             legend: {
                 display: false, // Hide dataset label
@@ -74,4 +62,4 @@ const BarChart = () => {
   )
 }
 
-export default BarChart
+export default BarChart2
