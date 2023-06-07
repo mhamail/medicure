@@ -5,8 +5,9 @@ import MultiLevelDropdown from '../multiLevelDropdown/MultiLevelDropdown'
 const SideBar2 = ({ children }) => {
     const [openDropdown, setOpenDropdown] = useState(false);
     const title = () => (
+      
         <div className='bg-gray-400 h-48 flex items-center justify-center text-gray-800'>
-            <h1 className='text-3xl font-bold'>Audio Book</h1>
+            <h1 className='text-3xl font-bold text-center px-2'>Medicure Book</h1>
         </div>
     )
     return (
